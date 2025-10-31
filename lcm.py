@@ -1,9 +1,22 @@
 def lcm(a, b):
-    for l in range(1, a * b + 1):
-        if l % a == 0 and l % b == 0:
-            return l
+     current_gcd = 1
+     mult = a * b
+     for d in range(1, min(a,b)):
+         r = int(max(a,b) % min(a,b))
+         a = b
+         b = r
 
-    assert False
+       
+             
+         if b == 0:
+             current_gcd = a
+             break
+     print( 14152290898148 / 4)
+     print(mult)
+     print(current_gcd)
+     return int(mult / current_gcd)
+
+    
 
 
 if __name__ == '__main__':
