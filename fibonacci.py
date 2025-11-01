@@ -1,14 +1,9 @@
 def fibonacci_number(n):
-    Fibonacci = []
-    Fibonacci.insert(0, 0)
-    Fibonacci.insert(1, 1)
-    Fibonacci.insert(2, 0)
+    Fibonacci = [0, 1, 1]
   
     for i in range(2, n + 1):
- 
-  
         l = Fibonacci[i-1] + Fibonacci[i-2]
-        Fibonacci.insert(i, l)
+        Fibonacci.append(l)
      
     print(Fibonacci[n])
    
